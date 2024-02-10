@@ -1,27 +1,29 @@
-<form class="form-group">
+<form class="form-group" [formGroup]="formGroup">
     <div class="form-icon">
         <img src="assets/img/png/icon-hour.png">Horário
     </div>
     <h3>Qual o horário você quer treinar?</h3>
     <div class="radio-wrapper">
-        <input type="radio" name="morning" value="morning"><span>06:00 às 12:00</span>
+        <input type="radio" name="hour" value="morning" formControlName="hour"><span>06:00 às 12:00</span>
         <label>Manhã</label>
     </div>
     <div class="radio-wrapper">
-        <input type="radio" name="afternoon" value="afternoon"><span>12:01 às 18:00</span>
+        <input type="radio" name="hour" value="afternoon" formControlName="hour"><span>12:01 às 18:00</span>
         <label name="afternoon">Tarde</label>
     </div>
     <div class="radio-wrapper">
-        <input type="radio" name="night" value="night"><span>18:01 às 23:00</span>
+        <input type="radio" name="hour" value="night" formControlName="hour"><span>18:01 às 23:00</span>
         <label for="night">Noite</label>
     </div>
     <div class="checkbox-wrapper">
-        <input type="checkbox" name="show-closed"/>
-        <label>Exibir unidades fechadas</label>
-        <span>Resultados encontrados {{ results.length }}</span>
+      <div class="checkbox">
+        <input type="checkbox" name="showClosed" formControlName="showClosed"/>
+        <label for="showClosed">Exibir unidades fechadas</label>
+      </div>
+        <span>Resultados encontrados: {{ results.length }}</span>
     </div>
     <div class="btn-wrapper">
-        <button class="btn btn-primary">Encontra unidade</button>
-        <button class="btn btn-secondary">Limpar</button>
+        <button class="btn btn-primary" (click)="onSubmit()">Encontra unidade</button>
+        <button class="btn btn-secondary" (click)="onClean()">Limpar</button>
     </div>
 </form>

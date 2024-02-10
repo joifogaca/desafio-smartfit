@@ -5,13 +5,16 @@ import { provideRouter } from "@angular/router";
 import { routes } from "./app.routes";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsComponent } from "./components/forms/forms.component";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
     declarations: [
         AppComponent,
         HeaderComponent,
         FormsComponent],
-    imports: [BrowserModule],
+    imports: [BrowserModule,
+             FormsModule,
+             ReactiveFormsModule],
     providers: [provideRouter(routes)],
     bootstrap: [AppComponent]
 })

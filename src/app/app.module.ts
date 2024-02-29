@@ -1,24 +1,29 @@
-import { NgModule } from "@angular/core";
-import { AppComponent } from "./app.component";
-import { HeaderComponent } from "./components/header/header.component";
-import { provideRouter } from "@angular/router";
-import { routes } from "./app.routes";
-import { BrowserModule } from "@angular/platform-browser";
-import { FormsComponent } from "./components/forms/forms.component";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
+import { NgModule } from "@angular/core";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { BrowserModule } from "@angular/platform-browser";
+import { provideRouter } from "@angular/router";
+import { AppComponent } from "./app.component";
+import { routes } from "./app.routes";
+import { CardListComponent } from "./components/card-list/card-list.component";
+import { FormsComponent } from "./components/forms/forms.component";
+import { HeaderComponent } from "./components/header/header.component";
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HeaderComponent,
-        FormsComponent],
-    imports: [BrowserModule,
-             FormsModule,
-             ReactiveFormsModule,
-            HttpClientModule],
-    providers: [provideRouter(routes)],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FormsComponent,
+    CardListComponent],
+  imports: [BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    CommonModule
+  ],
+  providers: [provideRouter(routes)],
+  bootstrap: [AppComponent]
 })
 
 export class AppModule { }

@@ -15,3 +15,7 @@ Pipe Async
 Usado em um BehaviorSubject, para que ele possa acompanhar as mudanças que ocorrerem no objeto showList
 
 `<app-card-list *ngIf="(showList | async )"></app-card-list>`
+
+### Gerar sombra para card
+
+https://cssgenerator.org/box-shadow-css-generator.html

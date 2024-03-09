@@ -7,6 +7,7 @@ import { provideRouter } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { routes } from "./app.routes";
 import { CardListComponent } from "./components/card-list/card-list.component";
+import { CardComponent } from "./components/card/card.component";
 import { FormsComponent } from "./components/forms/forms.component";
 import { HeaderComponent } from "./components/header/header.component";
 
@@ -15,7 +16,8 @@ import { HeaderComponent } from "./components/header/header.component";
     AppComponent,
     HeaderComponent,
     FormsComponent,
-    CardListComponent],
+    CardListComponent,
+    CardComponent],
   imports: [BrowserModule,
     FormsModule,
     ReactiveFormsModule,

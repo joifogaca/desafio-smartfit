@@ -8,6 +8,7 @@ import { AppComponent } from "./app.component";
 import { routes } from "./app.routes";
 import { CardListComponent } from "./components/card-list/card-list.component";
 import { CardComponent } from "./components/card/card.component";
+import { FooterComponent } from "./components/footer/footer.component";
 import { FormsComponent } from "./components/forms/forms.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { LegendComponent } from "./components/legend/legend.component";
@@ -19,7 +20,8 @@ import { LegendComponent } from "./components/legend/legend.component";
     FormsComponent,
     CardListComponent,
     CardComponent,
-    LegendComponent],
+    LegendComponent,
+    FooterComponent],
   imports: [BrowserModule,
     FormsModule,
     ReactiveFormsModule,

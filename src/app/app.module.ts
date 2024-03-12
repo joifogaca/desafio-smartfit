@@ -10,6 +10,7 @@ import { CardListComponent } from "./components/card-list/card-list.component";
 import { CardComponent } from "./components/card/card.component";
 import { FormsComponent } from "./components/forms/forms.component";
 import { HeaderComponent } from "./components/header/header.component";
+import { LegendComponent } from "./components/legend/legend.component";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HeaderComponent } from "./components/header/header.component";
     HeaderComponent,
     FormsComponent,
     CardListComponent,
-    CardComponent],
+    CardComponent,
+    LegendComponent],
   imports: [BrowserModule,
     FormsModule,
     ReactiveFormsModule,

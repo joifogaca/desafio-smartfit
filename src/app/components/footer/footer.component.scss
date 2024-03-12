@@ -9,21 +9,16 @@ footer {
   padding: 24px;
 
   gap: 32px;
+
+  background-color: var(--dark-grey);
 }
-
-
 
 footer img {
   height: 50px;
 }
 
-footer p {
-  color: var();
-}
-
-
-header .text-container p {
-  color: var(--dark-grey);
+header p {
+  color: var(--light-grey);
 }
 
 

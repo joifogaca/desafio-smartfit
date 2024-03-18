@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { cardMock } from '../../mocks/card.mock';
 import { CardComponent } from './card.component';
 
 describe('CardComponent', () => {
@@ -8,12 +9,13 @@ describe('CardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CardComponent]
+      declarations: [CardComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(CardComponent);
     component = fixture.componentInstance;
+    component.card = cardMock;
     fixture.detectChanges();
   });
 

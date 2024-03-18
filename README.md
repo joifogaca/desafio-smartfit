@@ -23,3 +23,6 @@ https://cssgenerator.org/box-shadow-css-generator.html
 ## Teste com Jtest
 
 https://metal-flea-041.notion.site/LIVE-Testes-unit-rios-em-Angular-6010a476f74f4f62b022f1f3506a62e2
+
+Comando para rodar os testes:
+`npm run test `

@@ -19,3 +19,7 @@ Usado em um BehaviorSubject, para que ele possa acompanhar as mudanças que ocor
 ### Gerar sombra para card
 
 https://cssgenerator.org/box-shadow-css-generator.html
+
+## Teste com Jtest
+
+https://metal-flea-041.notion.site/LIVE-Testes-unit-rios-em-Angular-6010a476f74f4f62b022f1f3506a62e2

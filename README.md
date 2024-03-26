@@ -26,3 +26,5 @@ https://metal-flea-041.notion.site/LIVE-Testes-unit-rios-em-Angular-6010a476f74f
 
 Comando para rodar os testes:
 `npm run test `
+
+- Não testamos HTML, testamos comportamento
